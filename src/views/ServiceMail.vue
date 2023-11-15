@@ -88,11 +88,11 @@ export default {
   methods: {
     send() {
       const pass = this.checkSuggesterInfo();
-      // if(!pass) {
-      //   const bsModal = (id) => new Modal(document.getElementById(id));
-      //   const target = bsModal('serviceMailModal');
-      //   target.show();
-      // }
+      if(pass) {
+        const bsModal = (id) => new Modal(document.getElementById(id));
+        const target = bsModal('serviceMailModal');
+        target.show();
+      }
     },
     checkSuggesterInfo() {
       let pass = true;
