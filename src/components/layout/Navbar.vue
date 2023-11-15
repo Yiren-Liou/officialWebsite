@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid px-0">
             <a class="navbar-brand" href="#">
-              <img src="src/assets/images/logo.svg" alt="3號 喵立翰">
+              <img src="src/assets/images/logo.svg" alt="3號 喵立翰" />
             </a>
             <button
               class="navbar-toggler"
@@ -21,21 +21,47 @@
             <div class="collapse navbar-collapse" id="topNavbar">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link fs-6 active" aria-current="page" href="#">候選人主張</a>
+                  <a class="nav-link fs-6 active" aria-current="page" href="#"
+                    >候選人主張</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-6" href="#">最新活動</a>
+                  <a
+                    class="nav-link fs-6"
+                    href="#newActivity"
+                    @click="scrollTo('newActivity', $event)"
+                    >最新活動</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-6" href="#">政策議題</a>
+                  <a
+                    class="nav-link fs-6"
+                    href="#policy"
+                    @click="scrollTo('policy', $event)"
+                    >政策議題</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-6" href="#">民眾服務信箱</a>
+                  <a
+                    class="nav-link fs-6"
+                    href="#serviceMail"
+                    @click="scrollTo('serviceMail', $event)"
+                    >民眾服務信箱</a
+                  >
                 </li>
               </ul>
-              <a class="d-center bg-primary rounded-pill text-white fs-6 px-4 py-2" href="#" role="button">
-                  <img src="src/assets/images/coin-white.svg" class="me-1" alt="小額捐款">
-                  小額捐款
+              <a
+                class="d-center bg-primary rounded-pill text-white fs-6 px-4 py-2"
+                href="#donate"
+                role="button"
+                @click="scrollTo('donate', $event)"
+              >
+                <img
+                  src="src/assets/images/coin-white.svg"
+                  class="me-1"
+                  alt="小額捐款"
+                />
+                小額捐款
               </a>
             </div>
           </div>
@@ -45,22 +71,36 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    scrollTo(id, e) {
+      e.preventDefault();
+      const targetArea = document.getElementById(id);
+      window.scrollTo({
+        top: targetArea.offsetTop - 90,
+        behavior: "smooth",
+      });
+    },
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .nav {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  border: 5px solid #4527A0;
+  border: 5px solid #4527a0;
   border-bottom: 0;
   z-index: 9;
 }
 
-.nav-item{
+.nav-item {
   margin-right: 50px;
   .active {
-    border-bottom: 3px solid #4527A0;
+    border-bottom: 3px solid #4527a0;
   }
 }
-
 </style>

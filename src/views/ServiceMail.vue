@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5" data-aos="fade-up">
+  <div id="serviceMail" class="py-5" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-md-7 position-relative">

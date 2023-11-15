@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-center" data-aos="fade-up">
+  <div id="donate" class="bg-center" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col col-md-7">
