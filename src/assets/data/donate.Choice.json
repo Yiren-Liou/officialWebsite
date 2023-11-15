@@ -1,0 +1,25 @@
+{
+  "choice": [
+    {
+      "id": 1,
+      "title": "喵星人之友",
+      "price": 600,
+      "img": "src/assets/images/donate/NT600.svg",
+      "sponsorNum": 9957
+    },
+    {
+      "id": 2,
+      "title": "喵星大使",
+      "price": 6000,
+      "img": "src/assets/images/donate/NT6000.svg",
+      "sponsorNum": 2000
+    },
+    {
+      "id": 3,
+      "title": "喵星傳奇",
+      "price": 6000,
+      "img": "src/assets/images/donate/NT60000.svg",
+      "sponsorNum": 9957
+    }
+  ]
+}
