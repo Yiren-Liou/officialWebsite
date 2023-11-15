@@ -91,6 +91,7 @@ export default {
         const bsModal = (id) => new Modal(document.getElementById(id));
         const target = bsModal('serviceMailModal');
         target.show();
+        this.reset();
       }
     },
     checkSuggesterInfo() {
@@ -118,6 +119,12 @@ export default {
         document.querySelector('#suggestion').classList.remove('border-danger');
       }
       return pass;
+    },
+    reset() {
+      this.suggester = '';
+      this.email = '';
+      this.phone = '';
+      this.suggestion = '';
     }
   }
 };
