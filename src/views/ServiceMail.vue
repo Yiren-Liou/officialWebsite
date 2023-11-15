@@ -54,7 +54,6 @@
               type="button"
               class="btn icon-btn-lg btn-primary rounded-pill text-white fs-4 mb-2"
               @click="send"
-              data-bs-toggle="modal" data-bs-target="#serviceMailModal"
             >
               送出意見
             </button>
