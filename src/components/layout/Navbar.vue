@@ -21,13 +21,17 @@
             <div class="collapse navbar-collapse" id="topNavbar">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link fs-6 active" aria-current="page" href="#"
-                    >候選人主張</a
-                  >
+                  <a class="nav-link fs-6"
+                    :class="{'active': targetArea == 'opinions' }"
+                    href="#"
+                    @click="this.targetArea = 'opinions'"
+                  >候選人主張
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link fs-6"
+                    :class="{'active': targetArea == 'newActivity' }"
                     href="#newActivity"
                     @click="scrollTo('newActivity', $event)"
                     >最新活動</a
@@ -36,6 +40,7 @@
                 <li class="nav-item">
                   <a
                     class="nav-link fs-6"
+                    :class="{'active': targetArea == 'policy' }"
                     href="#policy"
                     @click="scrollTo('policy', $event)"
                     >政策議題</a
@@ -44,6 +49,7 @@
                 <li class="nav-item">
                   <a
                     class="nav-link fs-6"
+                    :class="{'active': targetArea == 'serviceMail' }"
                     href="#serviceMail"
                     @click="scrollTo('serviceMail', $event)"
                     >民眾服務信箱</a
@@ -73,9 +79,15 @@
 
 <script>
 export default {
+  data() {
+    return {
+      targetArea: 'opinions',
+    };
+  },
   methods: {
     scrollTo(id, e) {
       e.preventDefault();
+      this.targetArea = id;
       const targetArea = document.getElementById(id);
       window.scrollTo({
         top: targetArea.offsetTop - 90,
