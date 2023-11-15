@@ -1,30 +1,27 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="outline">
+    <Navbar />
+    <Opinions />
+    <NewActivity />
+    <Policy />
+    <Donate />
+    <ServiceMail />
+    <Footer />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<script setup>
+import Navbar from "./components/layout/Navbar.vue";
+import Opinions from "./views/Opinions.vue";
+import NewActivity from "./views/NewActivity.vue";
+import Policy from "./views/Policy.vue";
+import Donate from "./views/Donate.vue";
+import ServiceMail from "./views/ServiceMail.vue";
+import Footer from './components/layout/Footer.vue';
+</script>
+
+<style lang="scss">
+.outline {
+  border: 5px solid #4527A0;
 }
 </style>

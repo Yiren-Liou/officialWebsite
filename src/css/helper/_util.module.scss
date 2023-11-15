@@ -1,0 +1,77 @@
+@mixin displayWay($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+// display
+.d-center {
+  @include displayWay(center);
+}
+
+.d-between {
+  @include displayWay(space-between);
+}
+
+.d-around {
+  @include displayWay(space-around);
+}
+
+.d-start {
+  @include displayWay(flex-start);
+}
+
+.d-end {
+  @include displayWay(flex-end);
+}
+
+.d-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-columnCenter {
+  display: flex;
+  flex-direction: column;
+  @include displayWay(center);
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyAround {
+  justify-content: space-around;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignBaseline {
+  align-items: baseline;
+}
+
+.alignBaseStart {
+  align-items: flex-start;
+}
+
+.bg-center {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
