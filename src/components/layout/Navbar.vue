@@ -53,7 +53,7 @@
   left: 0;
   border: 5px solid #4527A0;
   border-bottom: 0;
-  z-index: 99;
+  z-index: 9;
 }
 
 .nav-item{

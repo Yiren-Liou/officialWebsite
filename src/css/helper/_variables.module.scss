@@ -303,7 +303,7 @@ $secondary:     #26A69A !default;
 $success:       $green !default;
 $info:          #FFB300 !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        #FF3B3B !default;
 $light:         #333333 !default;
 $dark:          #222222 !default;
 // scss-docs-end theme-color-variables
@@ -1533,7 +1533,7 @@ $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
 
 $modal-sm:                          300px !default;
-$modal-md:                          500px !default;
+$modal-md:                          600px !default;
 $modal-lg:                          800px !default;
 $modal-xl:                          1140px !default;
 
