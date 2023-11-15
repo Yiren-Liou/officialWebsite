@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-center">
+  <div class="bg-center" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col col-md-7">
@@ -14,7 +14,7 @@
               <img src="src/assets/images/total-price.svg" alt="累積總金額" />
             </p>
             <strong class="text-primary fw-bold fs-large mb-4">
-              NT$<span class="text-primary fw-bold fs-large">{{ (totalPrice).toLocaleString() }}</span>
+              NT$<span class="text-primary fw-bold fs-large" id="counter">{{ (totalPrice).toLocaleString() }}</span>
             </strong>
             <button
               class="d-center bg-primary rounded-pill text-white fw-bold fs-4 px-5 py-4"
@@ -40,6 +40,23 @@ export default {
       totalPrice: 987655873,
     }
   },
+  mounted() {
+    const counterUp = window.counterUp.default;
+    const callback = entries => {
+      entries.forEach( entry => {
+        const el = entry.target
+        if (entry.isIntersecting) {
+          counterUp( el, {
+            duration: 1000,
+            delay: 16,
+          })
+        }
+      })
+    }
+    const IO = new IntersectionObserver( callback, { threshold: 1 } )
+    const targetCounter = document.querySelector( '#counter' )
+    IO.observe(targetCounter)
+  }
 }
 </script>
 

@@ -1,0 +1,35 @@
+@keyframes changeOpacity{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes cardMoveY{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes moveUp{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-150px);
+  }
+}
+
+@keyframes moveLeft{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100px);
+  }
+}

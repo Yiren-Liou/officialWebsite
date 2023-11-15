@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5">
+  <div class="py-5" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-md-7 position-relative">
@@ -7,10 +7,8 @@
             <h3 class="fs-large mb-4">
               <img src="src/assets/images/title/service-email.svg" alt="民眾服務信箱" />
             </h3>
-            <p class="fw-bold fs-5 mb-2">您的聲音，我們的行動！</p>
-            <p class="text-center fw-bold fs-5 w-75">
-              親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！
-            </p>
+            <p class="fw-bold fs-5 mb-2">{{ title }}</p>
+            <p class="text-center fw-bold fs-5 w-75">{{ content }}</p>
             <img src="src/assets/images/footer-cat.png" class="cat" alt="2023 THE F2E 立委競選" />
           </div>
         </div>
@@ -30,7 +28,12 @@
 
 <script>
 export default {
-  
+  data() {
+    return {
+      title: '您的聲音，我們的行動！',
+      content: '親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！'
+    };
+  },
 };
 </script>
 
