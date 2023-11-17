@@ -4,16 +4,16 @@
       <div class="row">
         <div class="col col-md-7">
           <div class="card">
-            <div v-if="!showDonateChoice" class="d-columnCenter py-5">
-              <h3 class="fs-large mb-4">
-                <img src="src/assets/images/title/donate.svg" alt="小額捐款" />
+            <div v-if="!showDonateChoice" class="d-columnCenter py-8 py-md-6 px-4">
+              <h3 class="d-center mb-3 mb-md-4">
+                <img class="titleImg" src="src/assets/images/title/donate.svg" alt="小額捐款" />
               </h3>
-              <p class="fw-bold fs-5 mb-5">
-                您的小筆捐款，是每隻毛孩未來的大大動力!
+              <p class="text-center fw-bold fs-base fs-md-5 mb-2 mb-md-5">
+                您的小筆捐款，<br class="d-block d-md-none">是每隻毛孩未來的大大動力!
               </p>
-              <img src="src/assets/images/total-price.svg" alt="累積總金額" />
-              <strong class="text-primary fw-bold fs-large mb-4">
-                NT$<span class="text-primary fw-bold fs-large" id="counter">{{
+              <img src="src/assets/images/total-price.svg" class="totalPriceImg mb-1 mb-md-0" alt="累積總金額" />
+              <strong class="text-primary fw-bold fs-1 fs-md-large mb-2 mb-md-4">
+                NT$<span class="text-primary fw-bold fs-1 fs-md-large" id="counter">{{
                   totalPrice.toLocaleString()
                 }}</span>
               </strong>
@@ -36,7 +36,7 @@
                 <div
                   v-for="choice in donateChoice"
                   :key="choice.id"
-                  class="col-md-4"
+                  class="col-md-4 mb-3 mb-md-0"
                 >
                   <input
                     type="radio"
@@ -59,10 +59,10 @@
                   </label>
                 </div>
               </div>
-              <div class="card-outline d-start px-5 py-4 mb-4">
-                <label for="donatePrice" class="fw-bold fs-6 w-50"
-                  >自訂捐款金額</label
-                >
+              <div class="card-outline d-md-flex align-items-md-center px-5 py-4 mb-5 mb-md-4">
+                <label for="donatePrice" class="text-center text-md-start fw-bold fs-6 w-100 w-md-50 mb-2 mb-md-0">
+                  自訂捐款金額
+                </label>
                 <input
                   type="number"
                   v-model="donatePrice"
@@ -72,9 +72,28 @@
                   oninput="value=value.replace(/[^\d]/g,'');if(value<0)value=0"
                 />
               </div>
-              <div class="d-center">
+              <div class="d-columnCenter flex-column-reverse d-md-none">
                 <button
-                  class="btn d-center btn-outline-primary rounded-pill fw-bold fs-4 me-4"
+                  class="btn d-center btn-outline-primary rounded-pill fw-bold fs-4 px-9"
+                  @click="this.showDonateChoice = false"
+                >
+                  返回
+                </button>
+                <button
+                  class="btn d-center btn-primary rounded-pill text-white fw-bold fs-4 px-5 py-4 mb-3"
+                  @click="donate"
+                >
+                  <img
+                    src="src/assets/images/coin-white.svg"
+                    class="me-1"
+                    alt="我要捐款"
+                  />
+                  我要捐款
+                </button>
+              </div>
+              <div class="d-none d-md-flex d-md-center">
+                <button
+                  class="btn d-center btn-outline-primary rounded-pill fw-bold fs-4 me-4 mb-md-0"
                   @click="this.showDonateChoice = false"
                 >
                   返回
@@ -140,6 +159,13 @@ export default {
 </script>
 
 <style scoped>
+.totalPriceImg {
+  width: 40%;
+  @media (min-width: 768px) {
+    width: 35%;
+  }
+}
+
 .bg-center {
   background-image: url(src/assets/images/bg-donate.png);
   padding: 45px 0;

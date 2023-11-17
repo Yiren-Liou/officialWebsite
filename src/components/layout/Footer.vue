@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-primary py-3">
+  <div class="bg-primary pt-6 pb-3 py-md-3 px-2 px-md-0">
     <div class="container">
       <div class="row align-items-center mb-4">
-        <div class="col-md-5">
+        <div class="col-md-5 d-none d-md-block">
           <img src="src/assets/images/logo-light.svg" alt="3號 喵立翰" />
         </div>
         <div class="col-md-7">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 mb-8 mb-md-0">
               <h5 class="text-center text-info fs-9 mb-2">Menu</h5>
               <div class="row">
                 <div class="col-6">

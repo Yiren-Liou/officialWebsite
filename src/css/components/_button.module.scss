@@ -1,7 +1,13 @@
 .icon-btn-lg{
-  padding: 20px 30px;
+  padding: 10px 30px;
   img {
     margin-right: 10px;
+  }
+  @media (min-width: 768px) {
+    padding: 20px 30px;
+    img {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -9,6 +15,12 @@
   padding: 15px 30px;
   img {
     margin-right: 10px;
+  }
+  @media (min-width: 768px) {
+    padding: 20px 60px;
+    img {
+      margin-right: 10px;
+    }
   }
 }
 

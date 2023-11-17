@@ -20,8 +20,10 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  height: 366px;
-  overflow: hidden;
+  @media (min-width: 768px) {
+    height: 366px;
+    overflow: hidden;
+  }
 }
 
 .content:hover {

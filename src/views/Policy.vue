@@ -9,7 +9,7 @@
           <Card :tag="'政策一'" :article="article[0]" />
         </div>
         <div class="col-md-4">
-          <div class="pt-5">
+          <div class="py-4 pt-md-5 pb-md-0">
             <Card :tag="'政策二'" :article="article[1]" />
           </div>
         </div>

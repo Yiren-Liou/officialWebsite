@@ -3,11 +3,56 @@
   line-height: 150px;
 }
 
-.fs-large {
-  font-size: 60px;
-  line-height: 72px;
+.fs-md-large {
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+.fs-base {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .tag {
   border-radius: 8px 0px;
+}
+
+@media (min-width: 768px) {
+  .fs-md-large {
+    font-size: 60px;
+    line-height: 72px;
+  }
+  .fs-md-base {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .fs-md-1 {
+    font-size: 44px !important;
+  }
+  .fs-md-2 {
+    font-size: 35px !important;
+  }
+  .fs-md-3 {
+    font-size: 36px !important;
+  }
+  .fs-md-4 {
+    font-size: 28px !important;
+  }
+  .fs-md-5 {
+    font-size: 24px !important;
+  }
+  .fs-md-6 {
+    font-size: 20px !important;
+  }
+  .fs-md-7 {
+    font-size: 18px !important;
+  }
+  .fs-md-8 {
+    font-size: 15px !important;
+  }
+  .fs-md-9 {
+    font-size: 13px !important;
+  }
 }

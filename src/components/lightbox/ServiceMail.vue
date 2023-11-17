@@ -11,10 +11,10 @@
       <div class="modal-content">
         <div class="modal-body d-columnCenter">
           <h3 class="text-center fw-bold fs-5 mb-2">{{ title }}</h3>
-          <p class="text-center fw-bold mb-7">{{ content }}</p>
+          <p class="text-center fw-bold mb-6 mb-md-7">{{ content }}</p>
           <button
             type="button"
-            class="btn btn-outline-primary rounded-pill border-3 fw-bold fw04"
+            class="btn icon-btn btn-outline-primary rounded-pill border-3 fw-bold fs-6 fs-md-4"
             data-bs-dismiss="modal"
           >
             返回
@@ -43,6 +43,9 @@ export default {
 }
 
 .modal-body {
-  padding: 75px 38px;
+  padding: 30px;
+  @media (min-width: 768px) {
+    padding: 75px 38px;
+  }
 }
 </style>

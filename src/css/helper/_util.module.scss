@@ -36,6 +36,39 @@
   @include displayWay(center);
 }
 
+@media (min-width: 768px) {
+  .d-md-center {
+    @include displayWay(center);
+  }
+  
+  .d-md-between {
+    @include displayWay(space-between);
+  }
+  
+  .d-md-around {
+    @include displayWay(space-around);
+  }
+  
+  .d-md-start {
+    @include displayWay(flex-start);
+  }
+  
+  .d-md-end {
+    @include displayWay(flex-end);
+  }
+  
+  .d-md-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .d-md-columnCenter {
+    display: flex;
+    flex-direction: column;
+    @include displayWay(center);
+  }
+}
+
 .justifyCenter {
   justify-content: center;
 }
@@ -66,6 +99,12 @@
 
 .alignBaseStart {
   align-items: flex-start;
+}
+
+.w-md-50 {
+  @media (min-width: 576px) {
+    width: 50% !important;
+  }
 }
 
 .bg-center {

@@ -1,43 +1,44 @@
 <template>
   <div id="serviceMail" class="py-5" data-aos="fade-up">
-    <div class="container">
+    <div class="container pb-8 pb-md-0">
       <div class="row">
         <div class="col-md-7 position-relative">
           <div class="d-columnCenter">
-            <h3 class="fs-large mb-4">
+            <h3 class="d-center mb-4">
               <img
+                class="titleImg"
                 src="src/assets/images/title/service-email.svg"
                 alt="民眾服務信箱"
               />
             </h3>
-            <p class="fw-bold fs-5 mb-2">{{ title }}</p>
-            <p class="text-center fw-bold fs-5 w-75">{{ content }}</p>
+            <p class="fw-bold fs-6 fs-md-5 mb-2">{{ title }}</p>
+            <p class="text-center fw-bold fs-8 fs-md-5 w-75">{{ content }}</p>
             <img
               src="src/assets/images/footer-cat.png"
-              class="cat"
-              alt="2023 THE F2E 立委競選"
+              class="d-none d-md-block cat"
+              alt="喵立翰"
             />
           </div>
         </div>
         <div class="col-md-5">
-          <form class="d-columnCenter pt-6 pb-7">
+          <form class="d-columnCenter pt-3 pt-md-6 pb-7">
             <input
               type="text"
-              class="form-control w-75 mb-4"
+              class="form-control w-75 mb-2 mb-md-4"
               id="suggester"
               v-model="suggester"
               placeholder="您的名字"
             />
             <input
               type="mail"
-              class="form-control w-75 mb-4"
+              class="form-control w-75 mb-2 mb-md-4"
               id="email"
               v-model="email"
               placeholder="您的Email"
             />
             <input
               type="tel"
-              class="form-control w-75 mb-4"
+              class="form-control w-75 mb-2 mb-md-4"
               id="phone"
               v-model="phone"
               placeholder="您的手機"
@@ -45,14 +46,14 @@
             />
             <textarea
               rows="3"
-              class="form-control w-75 mb-4"
+              class="form-control w-75 mb-2 mb-md-4"
               id="suggestion"
               v-model="suggestion"
               placeholder="您的建言"
             ></textarea>
             <button
               type="button"
-              class="btn icon-btn-lg btn-primary rounded-pill text-white fs-4 mb-2"
+              class="btn icon-btn-lg btn-primary rounded-pill text-white fs-6 fs-md-4 mb-2"
               @click="send"
             >
               送出意見
@@ -60,6 +61,11 @@
           </form>
         </div>
       </div>
+      <img
+        src="src/assets/images/footer-cat-s.svg"
+        class="d-block d-md-none cat"
+        alt="喵立翰"
+      />
     </div>
   </div>
   <MailSuccessBox />
@@ -133,6 +139,10 @@ export default {
 <style lang="scss" scoped>
 .cat {
   position: absolute;
-  bottom: -115px;
+  bottom: -60px;
+  // width: 100%;
+  @media (min-width: 768px){
+    bottom: -115px;
+  }
 }
 </style>
