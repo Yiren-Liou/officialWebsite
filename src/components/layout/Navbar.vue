@@ -8,7 +8,7 @@
               <img src="src/assets/images/logo.svg" class="logo" alt="3號 喵立翰" />
             </a>
             <button
-                class="btn border-0 p-1" type="button"
+                class="d-md-none btn border-0 p-1" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="展開選單">
               <img src="src/assets/images/hamberIcon.svg" class="" alt="3號 喵立翰" />
@@ -96,6 +96,8 @@
 </template>
 
 <script>
+import emitter from "../../methods/emitter.js";
+
 export default {
   data() {
     return {
@@ -112,6 +114,15 @@ export default {
         behavior: "smooth",
       });
     },
+    setTargetArea(id) {
+      this.targetArea = id
+    }
+  },
+  mounted() {
+    emitter.on('mitt-targetArea', (id) => this.setTargetArea(id));
+  },
+  unmounted() {
+    emitter.off('mitt-targetArea', this.setTargetArea(id));
   },
 };
 </script>

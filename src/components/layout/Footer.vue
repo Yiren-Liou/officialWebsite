@@ -11,14 +11,26 @@
               <h5 class="text-center text-info fs-9 mb-2">Menu</h5>
               <div class="row">
                 <div class="col-6">
-                  <a href="#" class="text-center text-white fs-8 mb-1">首頁</a>
-                  <a href="#" class="text-center text-white fs-8 mb-1">最新活動</a>
-                  <a href="#" class="text-center text-white fs-8 mb-1">民眾服務信箱</a>
+                  <a href="#" class="text-center text-white fs-8 mb-1">
+                    首頁
+                  </a>
+                  <a href="#newActivity" class="text-center text-white fs-8 mb-1" @click="scrollTo('newActivity', $event)">
+                    最新活動
+                  </a>
+                  <a href="#serviceMail" class="text-center text-white fs-8 mb-1" @click="scrollTo('serviceMail', $event)">
+                    民眾服務信箱
+                  </a>
                 </div>
                 <div class="col-6">
-                  <a href="#" class="text-center text-white fs-8 mb-1">候選人主張</a>
-                  <a href="#" class="text-center text-white fs-8 mb-1">政策議題</a>
-                  <a href="#" class="text-center text-white fs-8 mb-1">小額捐款</a>
+                  <a href="#" class="text-center text-white fs-8 mb-1">
+                    候選人主張
+                  </a>
+                  <a href="#policy" class="text-center text-white fs-8 mb-1" @click="scrollTo('policy', $event)">
+                    政策議題
+                  </a>
+                  <a href="#donate" class="text-center text-white fs-8 mb-1" @click="scrollTo('donate', $event)">
+                    小額捐款
+                  </a>
                 </div>
               </div>
             </div>
@@ -44,6 +56,24 @@
     </div>
   </div>
 </template>
+
+<script>
+import emitter from "../../methods/emitter.js";
+
+export default {
+  methods: {
+    scrollTo(id, e) {
+      e.preventDefault();
+      const targetArea = document.getElementById(id);
+      window.scrollTo({
+        top: targetArea.offsetTop - 90,
+        behavior: "smooth",
+      });
+      emitter.emit('mitt-targetArea', id);
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .copyright{
