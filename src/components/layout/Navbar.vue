@@ -5,21 +5,21 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="src/assets/images/logo.svg" class="logo" alt="3號 喵立翰" />
+              <img src="/src/assets/images/logo.svg" class="logo" alt="3號 喵立翰" />
             </a>
             <button
                 class="d-md-none btn border-0 p-1" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="展開選單">
-              <img src="src/assets/images/hamberIcon.svg" class="" alt="3號 喵立翰" />
+              <img src="/src/assets/images/hamberIcon.svg" class="" alt="3號 喵立翰" />
             </button>
             <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  <img src="src/assets/images/logo-white.svg" class="" alt="3號 喵立翰" />
+                  <img src="/src/assets/images/logo-white.svg" class="" alt="3號 喵立翰" />
                 </h5>
                 <button type="button" class="btn p-1" data-bs-dismiss="offcanvas" aria-label="Close">
-                  <img src="src/assets/images/close.svg" class="" alt="3號 喵立翰" />
+                  <img src="/src/assets/images/close.svg" class="" alt="3號 喵立翰" />
                 </button>
               </div>
               <div class="offcanvas-body d-md-start">
@@ -67,7 +67,7 @@
                   @click="scrollTo('donate', $event)"
                 >
                   <img
-                    src="src/assets/images/coin-purple.svg"
+                    src="/src/assets/images/coin-purple.svg"
                     class="me-1"
                     alt="小額捐款"
                   />
@@ -80,7 +80,7 @@
                   @click="scrollTo('donate', $event)"
                 >
                   <img
-                    src="src/assets/images/coin-white.svg"
+                    src="/src/assets/images/coin-white.svg"
                     class="me-1"
                     alt="小額捐款"
                   />

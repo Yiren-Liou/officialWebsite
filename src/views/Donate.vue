@@ -6,12 +6,12 @@
           <div class="card">
             <div v-if="!showDonateChoice" class="d-columnCenter py-8 py-md-6 px-4">
               <h3 class="d-center mb-3 mb-md-4">
-                <img class="titleImg" src="src/assets/images/title/donate.svg" alt="小額捐款" />
+                <img class="titleImg" src="/src/assets/images/title/donate.svg" alt="小額捐款" />
               </h3>
               <p class="text-center fw-bold fs-base fs-md-5 mb-2 mb-md-5">
                 您的小筆捐款，<br class="d-block d-md-none">是每隻毛孩未來的大大動力!
               </p>
-              <img src="src/assets/images/total-price.svg" class="totalPriceImg mb-1 mb-md-0" alt="累積總金額" />
+              <img src="/src/assets/images/total-price.svg" class="totalPriceImg mb-1 mb-md-0" alt="累積總金額" />
               <strong class="text-primary fw-bold fs-1 fs-md-large mb-2 mb-md-4">
                 NT$<span class="text-primary fw-bold fs-1 fs-md-large" id="counter">{{
                   totalPrice.toLocaleString()
@@ -22,7 +22,7 @@
                 @click="this.showDonateChoice = true"
               >
                 <img
-                  src="src/assets/images/coin-white.svg"
+                  src="/src/assets/images/coin-white.svg"
                   class="me-1"
                   alt="前往捐款"
                 />
@@ -84,7 +84,7 @@
                   @click="donate"
                 >
                   <img
-                    src="src/assets/images/coin-white.svg"
+                    src="/src/assets/images/coin-white.svg"
                     class="me-1"
                     alt="我要捐款"
                   />
@@ -103,7 +103,7 @@
                   @click="donate"
                 >
                   <img
-                    src="src/assets/images/coin-white.svg"
+                    src="/src/assets/images/coin-white.svg"
                     class="me-1"
                     alt="我要捐款"
                   />

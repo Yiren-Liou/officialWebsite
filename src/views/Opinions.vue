@@ -2,18 +2,18 @@
   <div class="container px-md-5 mb-5 mb-md-3" data-aos="fade-up">
     <div class="d-flex justify-content-between position-relative mb-3 mb-md-5">
       <div class="subject">
-        <img src="src/assets/images/activity-s.svg" class="d-block d-md-none mb-3" alt="2023 THE F2E 立委競選" />
-        <img src="src/assets/images/activity.svg" class="d-none d-md-block mb-3" alt="2023 THE F2E 立委競選" />
-        <img src="src/assets/images/slogan-s.svg" class="d-block d-md-none" alt="從喵的眼中看見台灣" />
-        <img src="src/assets/images/slogan.svg" class="d-none d-md-block" alt="從喵的眼中看見台灣" />
+        <img src="/src/assets/images/activity-s.svg" class="d-block d-md-none mb-3" alt="2023 THE F2E 立委競選" />
+        <img src="/src/assets/images/activity.svg" class="d-none d-md-block mb-3" alt="2023 THE F2E 立委競選" />
+        <img src="/src/assets/images/slogan-s.svg" class="d-block d-md-none" alt="從喵的眼中看見台灣" />
+        <img src="/src/assets/images/slogan.svg" class="d-none d-md-block" alt="從喵的眼中看見台灣" />
       </div>
-      <img id="nameFilled" class="d-none d-md-block" src="src/assets/images/candidate-name-white.svg" alt="候選人-喵立翰" />
-      <img src="src/assets/images/candidate.png" class="d-none d-md-block candidateImg" alt="候選人-喵立翰" />
+      <img id="nameFilled" class="d-none d-md-block" src="/src/assets/images/candidate-name-white.svg" alt="候選人-喵立翰" />
+      <img src="/src/assets/images/candidate.png" class="d-none d-md-block candidateImg" alt="候選人-喵立翰" />
     </div>
     <div class="d-none d-md-block d-md-flex">
-      <img src="src/assets/images/keep-it-possible.svg" alt="keep-it-possible" />
+      <img src="/src/assets/images/keep-it-possible.svg" alt="keep-it-possible" />
       <div class="">
-        <img id="nameOutline" src="src/assets/images/candidate-name-outline.svg" class="mb-5" alt="候選人-喵立翰" />
+        <img id="nameOutline" src="/src/assets/images/candidate-name-outline.svg" class="mb-5" alt="候選人-喵立翰" />
         <div class="slogan tag border-primary py-5 px-7">
           <h4 class="text-center fw-bold fs-1 pt-1 mb-5">{{ title }}</h4>
           <p class="fw-bold fs-5 mb-4">
@@ -26,10 +26,10 @@
       </div>
     </div>
     <div class="d-flex align-items-start d-md-none">
-      <img src="src/assets/images/keep-it-possible-s.svg" alt="keep-it-possible" />
+      <img src="/src/assets/images/keep-it-possible-s.svg" alt="keep-it-possible" />
       <div class="ms-1">
-        <img src="src/assets/images/candidate.png" class="candidateImg candidateImg-s" alt="候選人-喵立翰" />
-        <img id="" src="src/assets/images/candidate-name-outline-s.svg" class="mb-8" alt="候選人-喵立翰" />
+        <img src="/src/assets/images/candidate.png" class="candidateImg candidateImg-s" alt="候選人-喵立翰" />
+        <img id="" src="/src/assets/images/candidate-name-outline-s.svg" class="mb-8" alt="候選人-喵立翰" />
         <div class="slogan border-primary py-2 px-3 mt-7">
           <h4 class="text-center fw-bold fs-6 ps-4 mb-2">
             護航台灣幸福經濟<br>

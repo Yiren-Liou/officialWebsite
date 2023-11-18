@@ -1,7 +1,7 @@
 <template>
   <div id="newActivity" class="container mb-3" data-aos="fade-up">
     <h3 class="text-center fs-large mb-5">
-      <img src="src/assets/images/title/new-activity.svg" alt="最新活動" />
+      <img src="/src/assets/images/title/new-activity.svg" alt="最新活動" />
     </h3>
     <div class="row d-none d-md-flex">
       <div class="col-md-5">

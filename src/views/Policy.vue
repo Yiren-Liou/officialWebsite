@@ -2,7 +2,7 @@
   <div id="policy" class="bg-primary py-5" data-aos="fade-up">
     <div class="container pb-4">
       <h3 class="text-center fs-large mb-5">
-        <img src="src/assets/images/title/policy.svg" alt="政策議題" />
+        <img src="/src/assets/images/title/policy.svg" alt="政策議題" />
       </h3>
       <div class="row">
         <div class="col-md-4">

@@ -7,14 +7,14 @@
             <h3 class="d-center mb-4">
               <img
                 class="titleImg"
-                src="src/assets/images/title/service-email.svg"
+                src="/src/assets/images/title/service-email.svg"
                 alt="民眾服務信箱"
               />
             </h3>
             <p class="fw-bold fs-6 fs-md-5 mb-2">{{ title }}</p>
             <p class="text-center fw-bold fs-8 fs-md-5 w-75">{{ content }}</p>
             <img
-              src="src/assets/images/footer-cat.png"
+              src="/src/assets/images/footer-cat.png"
               class="d-none d-md-block cat"
               alt="喵立翰"
             />
@@ -62,7 +62,7 @@
         </div>
       </div>
       <img
-        src="src/assets/images/footer-cat-s.svg"
+        src="/src/assets/images/footer-cat-s.svg"
         class="d-block d-md-none cat"
         alt="喵立翰"
       />

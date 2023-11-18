@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row align-items-center mb-4">
         <div class="col-md-5 d-none d-md-block">
-          <img src="src/assets/images/logo-light.svg" alt="3號 喵立翰" />
+          <img src="/src/assets/images/logo-light.svg" alt="3號 喵立翰" />
         </div>
         <div class="col-md-7">
           <div class="row">
