@@ -1,6 +1,6 @@
 <template>
   <div class="card border-0">
-    <div class="img bg-center card-img-top" :style='{ backgroundImage: `url(${article.img})`}'>
+    <div class="img bg-center card-img-top" :style='{ backgroundImage: `url(${this.getUrl(article.img)})`}'>
       <div class="tag bg-secondary">
         <p class="text-center text-white fw-bold fs-4 fs-md-3">{{ date }}</p>
         <p class="text-center text-white fw-bold fs-8 ">DEC.</p>
@@ -14,14 +14,21 @@
 </template>
 
 <script>
+import getImageUrl from "../../methods/getImageUrl.js";
+
 export default {
-  props: ['article', "isMobile"],
+  props: ['article', "isMobile", "index"],
   computed: {
     date() {
       const text = this.article.date.split('.')[2];
       return text;
     }
   },
+  methods: {
+    getUrl(name) {
+      return getImageUrl(name)
+    }
+  }
 }
 </script>
 

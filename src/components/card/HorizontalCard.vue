@@ -3,7 +3,7 @@
     <div class="row g-0">
       <div class="col-md-5">
         <div class="cardImg">
-          <div class="rounded-start bg-center" :style='{ backgroundImage: `url(${article.img})`}'></div>
+          <div class="rounded-start bg-center" :style='{ backgroundImage: `url(${this.getUrl(article.img)})`}'></div>
         </div>
       </div>
       <div class="col-md-7">
@@ -18,8 +18,15 @@
 </template>
 
 <script>
+import getImageUrl from "../../methods/getImageUrl.js";
+
 export default {
-  props: ['article']
+  props: ['article'],
+  methods: {
+    getUrl(name) {
+      return getImageUrl(name)
+    }
+  }
 }
 </script>
 

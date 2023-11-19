@@ -167,7 +167,7 @@ export default {
 }
 
 .bg-center {
-  background-image: url(src/assets/images/bg-donate.png);
+  background-image: url(/src/assets/images/bg-donate.png);
   padding: 45px 0;
 }
 

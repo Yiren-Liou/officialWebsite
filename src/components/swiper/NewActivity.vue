@@ -17,13 +17,13 @@
     class="mySwiper"
   >
     <swiper-slide>
-      <VerticalCard :article="article[0]" :isMobile="true" />
+      <VerticalCard :article="article[0]" :isMobile="true" :index="0" />
     </swiper-slide>
     <swiper-slide>
-      <VerticalCard :article="article[1]" :isMobile="true" />
+      <VerticalCard :article="article[1]" :isMobile="true" :index="1" />
     </swiper-slide>
     <swiper-slide>
-      <VerticalCard :article="article[2]" :isMobile="true" />
+      <VerticalCard :article="article[2]" :isMobile="true" :index="2" />
     </swiper-slide>
   </swiper>
 </template>

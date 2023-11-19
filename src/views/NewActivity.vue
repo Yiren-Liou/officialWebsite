@@ -5,7 +5,7 @@
     </h3>
     <div class="row d-none d-md-flex">
       <div class="col-md-5">
-        <VerticalCard :article="subArticles[0]" :isMobile="false" />
+        <VerticalCard :article="subArticles[0]" :isMobile="false" :index="0" />
       </div>
       <div class="col-md-7">
         <div class="mb-5">
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="d-block d-md-none">
-      <ActiivirySwiper :article="subArticles"/>
+      <ActivitySwiper :article="subArticles"/>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
 <script>
 import VerticalCard from "../components/card/VerticalCard.vue";
 import HorizontalCard from "../components/card/HorizontalCard.vue";
-import ActiivirySwiper from "../components/swiper/NewActivity.vue";
+import ActivitySwiper from "../components/swiper/NewActivity.vue";
 import acitvityList from "../assets/data/acitvities.json";
 
 export default {
@@ -35,7 +35,7 @@ export default {
   components: {
     VerticalCard,
     HorizontalCard,
-    ActiivirySwiper
+    ActivitySwiper
   },
   created() {
     this.subArticles = acitvityList.activities;
